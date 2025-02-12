@@ -1,0 +1,153 @@
+
+
+
+
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+    width: 120%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Navigation Button Group */
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button-group button {
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #010a13;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-group button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.button-group button.active {
+    background-color: #28a745;
+}
+
+/* Component Styling */
+.component {
+    padding: 20px;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Earnings, Invoices, and Notifications Sections */
+.earnings, .invoices, .notifications {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-top: 20px; /* Add space between components */
+}
+
+.earnings h2, .invoices h2, .notifications h2 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 20px; /* Add more spacing between input fields */
+}
+
+/* label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+} */
+
+/* Input Fields */
+input, select, textarea {
+    width: 100%;
+    padding: 12px; /* Increased padding */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    margin-top: 5px; /* Add spacing above inputs */
+}
+
+/* Textarea Styling */
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+    height: 100px; /* Set default height */
+}
+
+/* Focus Effects */
+input:focus, select:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit Buttons Inside Components */
+.component button {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+.component button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+.invoicelabel{
+    font-size: 20px;
+    font-weight: bold;
+    display:flex;
+}
+
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
